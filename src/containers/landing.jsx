@@ -46,9 +46,9 @@ export function Landing() {
           <motion.img
             src={image}
             alt=""
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: "0%", pathLength: 1 }}
-            transition={{ type: "tween", duration: 0.8 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2 }}
           />
         </div>
       </main>
