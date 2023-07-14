@@ -1,6 +1,6 @@
 export function CategoryCard({ img, heading, paragraph }) {
   return (
-    <article className="category--card max-w-[230px]  p-4 flex flex-col gap-4 text-center rounded-2xl">
+    <article className="category--card max-w-[230px]  p-4 flex flex-col gap-4 text-center rounded-[36px] ">
       <div className="h-[110px] flex justify-center items-center">
         <img src={img} alt="satellite" className="w-fit mx-auto" />
       </div>

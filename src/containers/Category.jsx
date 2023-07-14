@@ -14,7 +14,7 @@ export function Category() {
         <Subtitle>Category</Subtitle>
         <Title>We Offer Best Services</Title>
       </div>
-      <div className="my-5 grid gap-9 grid-cols-auto justify-center ">
+      <div className="category--grid my-5 grid gap-9 grid-cols-auto justify-center ">
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
