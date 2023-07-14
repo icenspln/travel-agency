@@ -16,7 +16,10 @@ export default {
       fontFamily: {
         poppins: "'Poppins', sans-serif;",
         volkhov: "'Volkhov', serif;",
-      }
+      },
+      gridTemplateColumns: {
+        auto: "repeat(auto-fit, minmax(230px, auto))",
+      },
     },
   },
   plugins: [],

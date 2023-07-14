@@ -92,3 +92,35 @@ body {
   left: 0;
   filter: blur(17px);
 }
+
+.category {
+  position: relatve;
+}
+
+.category::before {
+  content: url("./assets/dotted-decore.svg");
+  position: absolute;
+  right: 5%;
+  z-index: -1;
+
+}
+
+.category--card {
+  background-color: white;
+}
+
+.category--card:nth-child(2) {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -10px,
+    rgba(0, 0, 0, 0.01) 0px 10px 20px -5px;
+  position: relative;
+}
+
+
+.category--card:nth-child(2)::before {
+  content: url("./assets/category-card-decore.svg");
+  /* content: ""; */
+  position: absolute;
+  z-index: -1;
+  bottom: -10%;
+  left: -10%;
+}
