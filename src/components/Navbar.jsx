@@ -2,7 +2,8 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import { BiX } from "react-icons/bi";
 import { CgMenuRightAlt } from "react-icons/cg";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,51 +24,62 @@ export function Navbar() {
       <a href="#">
         <img src={logo} alt="logo" />
       </a>
-      <motion.div
-        animate={isOpen ? "open" : "closed"}
-        variants={variants}
-        className="absolute top-0 right-0 w-[250px] h-screen bg-[#D5AEE475] p-8 z-10 flex flex-col gap-4"
-      >
-        <div className="flex justify-between items-center font-bold mb-5">
-          <h2>Menu</h2>
-          <BiX
-            className="text-4xl text-white cursor-pointer"
-            onClick={handleClose}
-          />
-        </div>
-        <ul className="flex flex-col gap-2 md:gap-3  text-white">
-          <a href="#">
-            <li>Destination</li>
-          </a>
-          <a href="#">
-            <li>Hotels</li>
-          </a>
-          <a href="#">
-            <li>Flights</li>
-          </a>
-          <a href="#">
-            <li>Bookings</li>
-          </a>
-        </ul>
-        <div className="flex flex-col-reverse gap-3 lg:gap-8 items-start mt-auto">
-          <div className="flex items-center w-full justify-between">
-            <a href="#" className="hover:text-white duration-300">
-              login
-            </a>
-            <a
-              href="#"
-              className="py-[6px] px-[22px] border-2 border-black hover:border-black rounded-md hover:border-transparent hover:bg-white duration-300"
-            >
-              signup
-            </a>
+      <AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={isOpen ? "open" : "closed"}
+          variants={variants}
+          exit={{ opacity: 0 }}
+          className="fixed top-0 right-0 w-[250px] h-screen bg-[#D5AEE4F2] p-8 z-10 flex flex-col gap-4"
+          // style={isOpen ? { display: "block" } : { display: "none" }}
+        >
+          <div className="flex justify-between items-center font-bold mb-5">
+            <h2>Menu</h2>
+            <BiX
+              className="text-5xl text-white cursor-pointer"
+              onClick={handleClose}
+            />
           </div>
-          <select name="" id="" className="bg-transparent">
-            <option value="">EN</option>
-            <option value="">FR</option>
-          </select>
-        </div>
-      </motion.div>
-      <motion.div animate={isOpen ? { opacity: 0 } : { opacity: 1 }}>
+          <ul className="flex flex-col gap-2 md:gap-3  text-white">
+            <a href="#">
+              <li>Destination</li>
+            </a>
+            <a href="#">
+              <li>Hotels</li>
+            </a>
+            <a href="#">
+              <li>Flights</li>
+            </a>
+            <a href="#">
+              <li>Bookings</li>
+            </a>
+          </ul>
+          <div className="flex flex-col-reverse gap-3 lg:gap-8 items-start mt-auto">
+            <div className="flex items-center w-full justify-between">
+              <a href="#" className="hover:text-white duration-300">
+                login
+              </a>
+              <a
+                href="#"
+                className="py-[6px] px-[22px] border-2 border-black hover:border-black rounded-md hover:border-transparent hover:bg-white duration-300"
+              >
+                signup
+              </a>
+            </div>
+            <select name="" id="" className="bg-transparent">
+              <option value="">EN</option>
+              <option value="">FR</option>
+            </select>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+      <motion.div
+        animate={
+          isOpen
+            ? { opacity: 0, display: "none" }
+            : { opacity: 1, display: "block" }
+        }
+      >
         <CgMenuRightAlt
           className="text-4xl cursor-pointer block md:hidden"
           onClick={handleOpen}
