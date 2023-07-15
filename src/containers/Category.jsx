@@ -18,8 +18,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.3 }}
-          viewport={{ once: true, amount: "all" }}
+          transition={{ delay: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <CategoryCard
             img={satellite}
@@ -30,8 +30,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.4 }}
-          viewport={{ once: true, amount: "all" }}
+          transition={{ delay: 0.1 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <CategoryCard
             img={plane}
@@ -42,8 +42,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.5 }}
-          viewport={{ once: true, amount: "all" }}
+          transition={{ delay: 0.2 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <CategoryCard
             img={mic}
@@ -54,8 +54,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.6 }}
-          viewport={{ once: true, amount: "all" }}
+          transition={{ delay: 0.3 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <CategoryCard
             img={gear}
