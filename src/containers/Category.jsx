@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 export function Category() {
   return (
-    <section className="category my-12">
-      <div className="flex flex-col gap-3 justify-center items-center text-center">
+    <section className="category my-20">
+      <div className="flex flex-col gap-3 justify-center items-center text-center mb-16">
         <Subtitle>Category</Subtitle>
         <Title>We Offer Best Services</Title>
       </div>
@@ -18,8 +18,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.4 }}
-          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          viewport={{ once: true, amount: "all" }}
         >
           <CategoryCard
             img={satellite}
@@ -30,8 +30,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.5 }}
-          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          viewport={{ once: true, amount: "all" }}
         >
           <CategoryCard
             img={plane}
@@ -42,8 +42,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.6 }}
-          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true, amount: "all" }}
         >
           <CategoryCard
             img={mic}
@@ -54,8 +54,8 @@ export function Category() {
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ delay: 0.7 }}
-          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          viewport={{ once: true, amount: "all" }}
         >
           <CategoryCard
             img={gear}

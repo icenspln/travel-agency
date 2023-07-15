@@ -2,11 +2,19 @@ import { Navbar } from "../components/Navbar";
 import decore from "../assets/decore.png";
 import { BsFillPlayFill } from "react-icons/bs";
 import image from "../assets/image.png";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
+
 export function Landing() {
   return (
     <>
-      <img className="decore" src={decore} alt="" />
+      <motion.img
+        className="decore"
+        src={decore}
+        alt=""
+        initial={{ y: "-300%", x: "300%" }}
+        animate={{ y: "0%", x: "0%" }}
+        transition={{ ease: "anticipate", duration: 1 }}
+      />
       <Navbar />
       <main className="main flex flex-col md:flex-row justify-between items-center gap-3">
         <motion.div

@@ -93,9 +93,7 @@ body {
   filter: blur(17px);
 }
 
-.category {
-  position: relatve;
-}
+.category {}
 
 .category::before {
   content: url("./assets/dotted-decore.svg");
@@ -113,8 +111,7 @@ body {
 
 .category--grid div:nth-child(2) article {
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -10px,
-    rgba(0, 0, 0, 0.01) 0px 10px 20px -5px;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 
 }
 
@@ -126,4 +123,24 @@ body {
   z-index: -1;
   bottom: -10%;
   left: -10%;
+}
+
+.dest-card {
+  border-radius: 24px;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  width: 314px;
+  height: 457px;
+  flex-shrink: 0;
+}
+
+.dest-grid div:nth-child(1) .dest-card {
+  background: url("./assets/dest1.png"), lightgray 50% / cover no-repeat;
+}
+
+.dest-grid div:nth-child(2) .dest-card {
+  background: url("./assets/dest2.png"), lightgray 50% / cover no-repeat;
+}
+
+.dest-grid div:nth-child(3) .dest-card {
+  background: url("./assets/dest3.png"), lightgray 50% / cover no-repeat;
 }

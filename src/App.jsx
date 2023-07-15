@@ -1,5 +1,5 @@
-import { Navbar } from "./components/Navbar";
 import { Category } from "./containers/Category";
+import { Destinations } from "./containers/Destinations";
 import { Landing } from "./containers/landing";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <div className="container mx-auto px-8 py-8">
         <Landing />
         <Category />
+        <Destinations />
       </div>
     </main>
   );
