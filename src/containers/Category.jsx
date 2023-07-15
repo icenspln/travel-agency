@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export function Category() {
   return (
-    <section className="category my-20">
+    <section className="category mt-10 mb-32 ">
       <div className="flex flex-col gap-3 justify-center items-center text-center mb-16">
         <Subtitle>Category</Subtitle>
         <Title>We Offer Best Services</Title>

@@ -1,3 +1,4 @@
+import { Booking } from "./containers/Booking";
 import { Category } from "./containers/Category";
 import { Destinations } from "./containers/Destinations";
 import { Landing } from "./containers/landing";
@@ -9,6 +10,7 @@ function App() {
         <Landing />
         <Category />
         <Destinations />
+        <Booking />
       </div>
     </main>
   );

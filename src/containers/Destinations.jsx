@@ -5,7 +5,7 @@ import { easeInOut, motion } from "framer-motion";
 
 export function Destinations() {
   return (
-    <section className="my-20">
+    <section className="mt-10 mb-32">
       <div className="flex flex-col gap-3 justify-center items-center text-center mb-16">
         <Subtitle>Top Selling</Subtitle>
         <Title>Top Destinations</Title>
