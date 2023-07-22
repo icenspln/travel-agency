@@ -2,6 +2,7 @@ import { Booking } from "./containers/Booking";
 import { Category } from "./containers/Category";
 import { Companies } from "./containers/Companies";
 import { Destinations } from "./containers/Destinations";
+import { Footer } from "./containers/Footer";
 import { Subscribe } from "./containers/Subscribe";
 import { Testimonials } from "./containers/Testimonials";
 import { Landing } from "./containers/landing";
