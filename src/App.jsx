@@ -17,6 +17,7 @@ function App() {
         <Testimonials />
         <Companies />
         <Subscribe />
+        <Footer />
       </div>
     </main>
   );

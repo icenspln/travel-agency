@@ -5,8 +5,10 @@ export function TestCard({ name, img, comment, country }) {
       <p className=" text-lightGray leading-loose mb-5 text-sm md:text-normal">
         {comment}
       </p>
-      <h2 className="text-lg font-medium text-lightGray">{name}</h2>
-      <h3 className="text-sm font-normal text-lightGray">{country}</h3>
+      <h2 className="text-lg font-medium text-lightGray capitalize">{name}</h2>
+      <h3 className="text-sm font-normal text-lightGray capitalize">
+        {country}
+      </h3>
     </article>
   );
 }

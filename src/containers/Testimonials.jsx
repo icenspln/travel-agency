@@ -49,7 +49,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="-mt-20 mb-28 flex flex-col md:flex-row gap-10 justify-between items-start">
+    <section className="-mt-20 mb-28 flex flex-col md:flex-row gap-20 md:gap-10 justify-between items-start">
       <div>
         <Subtitle>TESTIMONIALS</Subtitle>
         <Title>What people say about Us.</Title>

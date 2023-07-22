@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function Companies() {
   return (
-    <section className="flex gap-4 flex-col md:flex-row md:gap-10 justify-around items-center">
+    <section className="flex gap-4 flex-col md:flex-row md:gap-10 justify-around items-center mb-24">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
