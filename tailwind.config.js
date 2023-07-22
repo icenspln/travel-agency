@@ -11,7 +11,9 @@ export default {
         dark: "#212832",
         darkBlue: "#181E4B",
         lightGray: "#5E6282",
-        yellow: "#F1A501"
+        yellow: "#F1A501",
+        grayish: "#E5E5E5"
+
       },
       fontFamily: {
         poppins: "'Poppins', sans-serif;",
