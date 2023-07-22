@@ -1,4 +1,4 @@
-import { HiOutlineMail } from "react-icons/hi";
+import { MdAlternateEmail } from "react-icons/md";
 
 export function Subscribe() {
   return (
@@ -11,10 +11,10 @@ export function Subscribe() {
         <div className="relative">
           <input
             type="email"
-            className="py-6 pe-4 ps-12 caret focus:outline-none  placeholder:font-extralight"
-            placeholder="your email"
+            className="py-6 pe-4 ps-12 caret focus:outline-none  placeholder:text-[#39425D] placeholder:font-extralight"
+            placeholder="Your email"
           />
-          <HiOutlineMail className="email-icon text-lg" />
+          <MdAlternateEmail className="email-icon" />
         </div>
         <button
           type="submit"
