@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Subtitle } from "../components/Subtitle";
 import { TestCard } from "../components/TestCard";
 import { Title } from "../components/Title";
-import { motion, AnimatePresence } from "framer-motion";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { motion } from "framer-motion";
+import { HiArrowNarrowUp, HiArrowNarrowDown } from "react-icons/hi";
 import test1 from "../assets/test1.png";
 import test2 from "../assets/test2.png";
 
@@ -71,10 +71,10 @@ export function Testimonials() {
           })}
           <div className="flex flex-col gap-5">
             <div onClick={handleUpArrow} className="cursor-pointer">
-              <IoIosArrowUp className="text-4xl text-darkBlue " />
+              <HiArrowNarrowUp className="text-4xl text-darkBlue " />
             </div>
             <div onClick={handleDownArrow} className="cursor-pointer">
-              <IoIosArrowDown className="text-4xl text-grayish" />
+              <HiArrowNarrowDown className="text-4xl text-grayish" />
             </div>
           </div>
         </div>
