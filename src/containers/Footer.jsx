@@ -18,7 +18,7 @@ export function Footer() {
           <section className="flex  flex-col sm:flex-row gap-10">
             <div>
               <h3 className="font-bold text-dark text-xl mb-8">Company</h3>
-              <ul className="flex flex-col gap-3 text-blueish">
+              <ul className="flex flex-col gap-3 text-blueish cursor-pointer">
                 <li>About</li>
                 <li>Careers</li>
                 <li>Mobile</li>
@@ -27,7 +27,7 @@ export function Footer() {
 
             <div>
               <h3 className="font-bold text-dark text-xl mb-8">Contact</h3>
-              <ul className="flex flex-col gap-3 text-blueish">
+              <ul className="flex flex-col gap-3 text-blueish cursor-pointer">
                 <li>Help/FAQ</li>
                 <li>Press</li>
                 <li>Affilates</li>
@@ -35,7 +35,7 @@ export function Footer() {
             </div>
             <div>
               <h3 className="font-bold text-dark text-xl mb-8">More</h3>
-              <ul className="flex flex-col gap-3 text-blueish">
+              <ul className="flex flex-col gap-3 text-blueish cursor-pointer">
                 <li>Airlinefees</li>
                 <li>Airline</li>
                 <li>Low fare tips</li>
@@ -44,7 +44,7 @@ export function Footer() {
           </section>
           <section className="flex flex-col gap-4">
             <p className="text-blueish text-sm">Checkout our social media</p>
-            <div className="flex gap-3 items-center justify-start">
+            <div className="flex gap-3 items-center justify-start cursor-pointer">
               <div>
                 <FaFacebookF />
               </div>
