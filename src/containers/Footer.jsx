@@ -1,7 +1,7 @@
-import { BiLogoFacebook } from "react-icons/bi";
-import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import logo from "../assets/jadoo.svg";
 
+import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
 export function Footer() {
   return (
     <>
@@ -46,7 +46,7 @@ export function Footer() {
             <p className="text-blueish text-sm">Checkout our social media</p>
             <div className="flex gap-3 items-center justify-start">
               <div>
-                <BiLogoFacebook />
+                <FaFacebookF />
               </div>
               <div>
                 <AiOutlineInstagram />

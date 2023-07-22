@@ -107,8 +107,6 @@ body {
   filter: blur(17px);
 }
 
-.category {}
-
 .category::before {
   content: url("./assets/dotted-decore.svg");
   position: absolute;
