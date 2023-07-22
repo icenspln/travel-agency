@@ -10,9 +10,10 @@ export default {
         orange: "#DF6951",
         dark: "#212832",
         darkBlue: "#181E4B",
+        blueish: "#5E6282",
         lightGray: "#5E6282",
         yellow: "#F1A501",
-        grayish: "#E5E5E5"
+        grayish: "#E5E5E5",
 
       },
       fontFamily: {

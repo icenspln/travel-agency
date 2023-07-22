@@ -322,3 +322,14 @@ body {
   filter: blur(17px);
 
 }
+
+.footer {
+  color: var(--textclr, #5E6282);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%;
+  /* 17.43px */
+  text-align: center;
+}
